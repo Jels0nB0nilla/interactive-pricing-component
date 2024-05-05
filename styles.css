@@ -361,6 +361,10 @@ hr {
   margin-top: 4.5rem;
 }
 
+.attribution a {
+  text-decoration: underline;
+}
+
 @media (max-width: 500px) {
   body {
     width: 100%;
@@ -477,7 +481,6 @@ hr {
   }
 
   .attribution {
-    grid-area: footer;
     margin-top: 13.5rem;
   }
 }
