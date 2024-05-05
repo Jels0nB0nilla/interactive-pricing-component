@@ -26,12 +26,12 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    <container class="main" role="main">
+    <div class="main" role="main">
       <div class="heading">
         <h1>Simple, traffic-based pricing</h1>
         <p>Sign-up for our 30-day trial. <span>No credit card required.</span></p>
       </div>
-      <section class="component">
+      <div class="component">
         <div class="view-price-container">
           <span class="views">100k</span>
           <span class="pageviews">pageviews</span>
@@ -51,7 +51,7 @@
         <div class="billing">
           <p class="monthly-billing">Monthly Billing</p>
           <label class="switch" for="billing-freq">
-            <input type="checkbox" placeholder="billing frequency" name="billing-freq" id="billing-freq" />
+            <input type="checkbox" aria-label="billing frequency" name="billing-freq" id="billing-freq" />
             <div class="toggle">
               <span class="slider" id="toggle-btn"></span>
             </div>
@@ -91,7 +91,7 @@
           </div>
           <div class="trial-btn"><span>Start my trial</span></div>
         </div>
-      </section>
+      </div>
       <div class="attribution">
         Challenge by
         <a
@@ -101,6 +101,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Jelson</a>.
       </div>
-    </container>
+    </div>
   </body>
 </html>
