@@ -271,7 +271,9 @@ input[type='range']::-ms-thumb {
   height: 0;
 }
 
-.toggle #toggle-btn {
+/* ============= */
+
+#toggle-btn {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -284,7 +286,7 @@ input[type='range']::-ms-thumb {
   border-radius: 3.4rem;
 }
 
-.toggle #toggle-btn:before {
+#toggle-btn:before {
   position: absolute;
   content: '';
   width: 2.6rem;
@@ -298,15 +300,15 @@ input[type='range']::-ms-thumb {
   z-index: 100;
 }
 
-input:checked + .toggle #toggle-btn {
+input:checked + #toggle-btn {
   background-color: var(--grayish-blue);
 }
 
-input:focus + .toggle #toggle-btn {
+input:focus + #toggle-btn {
   box-shadow: 0 0 0.1rem var(--grayish-blue);
 }
 
-input:checked + .toggle #toggle-btn:before {
+input:checked + #toggle-btn:before {
   -webkit-transform: translateX(2.6rem);
   -ms-transform: translateX(2.6rem);
   transform: translateX(2.6rem);
@@ -356,7 +358,7 @@ hr {
 
 .attribution {
   grid-area: footer;
-  margin-top: 1.5rem;
+  margin-top: 4.5rem;
 }
 
 @media (max-width: 500px) {
@@ -455,15 +457,15 @@ hr {
   }
 
   .twofive-discount span {
-  display: none;
-}
+    display: none;
+  }
 
   .switch {
     width: 4.6rem;
     height: 2.3rem;
   }
 
-  .toggle #toggle-btn:before {
+  #toggle-btn:before {
     width: 2rem;
     height: 2rem;
   }
@@ -472,5 +474,10 @@ hr {
     flex-direction: column;
     height: 18rem;
     margin-right: 4rem;
+  }
+
+  .attribution {
+    grid-area: footer;
+    margin-top: 13.5rem;
   }
 }
